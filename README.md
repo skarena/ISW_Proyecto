@@ -52,17 +52,17 @@
 ## CONCLUSIONES Y RECOMENDACIONES
 
 ## BIBLIOGRAFIA
+
 1. ASPECTOS DE LA ORGANIZACIÓN
     1. Mision
 
         Prestamos servicios de transporte y logística como operadores integrales atendiendo el mercado nacional e internacional, a través del desarrollo de productos de calidad, proporcionando soluciones globales y a la medida de las necesidades de nuestros clientes.
 
     2. Vision
-        
         Constituirnos en la empresa líder en el mercado de transporte y logística, desarrollando nuestros recursos humanos y técnicos para alcanzar un alto estándar de calidad y diferenciación en los servicios que brindamos a nuestros clientes.
 
     3. Objetivos
-    
+
         "PENDIENTE"
 
     4. Antecedentes
@@ -70,5 +70,16 @@
     5. Organigrama
     ![Organigrama de la empresa](https://www.gestion.org/wp-content/uploads/2015/09/Organigrama-de-una-empresa-peque%C3%B1a-662x483.png)
 
+3.1.3. Relacion de actores y su descripción
 
+Actor|Asignado a|Responsabilidades
+---|---|---
+Cliente|Realizar Registro/Reservar Cita/Visualizar Productos|El cliente solicita el servicio mediante llamada telefónica, Whatsapp o pagina web brindando sus datos e informacion personal requerida.
 
+3.1.4. Relación de casos de uso
+
+ Nro. | Caso de Uso | Descripción
+---|---|---
+CUN01|Realizar registro|Para este caso de uso de negocio se necesita registra de manera óptima a un cliente para así poder brindar diversas funcionalidades al cliente en beneficio de ambos.
+CUN02|Reservar Cita|En este caso de uso de negocio el cliente solicita al sistema la reserva de una cita, obteniendose como respuesta la seleccion de fecha y hora disponibles de acuerdo a conveniencia del cliente.
+CUN03|Visualizar productos|El cliente interactua con el sistema, observandose diversos productos de interes, del cual el mismo podra obtener información de las diferentes caracteristicas de los productos mostrados.
