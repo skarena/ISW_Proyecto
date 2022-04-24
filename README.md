@@ -84,8 +84,8 @@ CUN01|Realizar registro|Para este caso de uso de negocio se necesita registra de
 CUN02|Reservar Cita|En este caso de uso de negocio el cliente solicita al sistema la reserva de una cita, obteniendose como respuesta la seleccion de fecha y hora disponibles de acuerdo a conveniencia del cliente.
 CUN03|Visualizar productos|El cliente interactua con el sistema, observandose diversos productos de interes, del cual el mismo podra obtener información de las diferentes caracteristicas de los productos mostrados.
 
- 1. Modelo de Requerimientos
+
  
-        8. Modelo Conceptual de clases
+        3.1.8. Modelo Conceptual de clases
 
 [![modelo-conceotual.jpg](https://i.postimg.cc/prXGsGyg/modelo-conceotual.jpg)](https://postimg.cc/VrpW6FqR)
