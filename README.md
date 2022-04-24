@@ -85,13 +85,7 @@ CUN02|Reservar Cita|En este caso de uso de negocio el cliente solicita al sistem
 CUN03|Visualizar productos|El cliente interactua con el sistema, observandose diversos productos de interes, del cual el mismo podra obtener información de las diferentes caracteristicas de los productos mostrados.
 
  1. Modelo de Requerimientos
-        1. Cuadro de requerimientos funcionales, indicando: identificativo, nombre y descripcion.
-        2. Cuadro de requerimientos no funcionales, indicando: identificativo, nombre y descripcion.
-        3. Relacion de actores y su descripcion.
-        4. Relacion de casos de uso.
-        5. Modelo de caso de uso de requerimientos.
-        6. Plantilla de especificacion de casos de uso.
-        7. Matriz de trazabilidad de los requerimientos y casos de uso.
+ 
         8. Modelo Conceptual de clases
 
 [![modelo-conceotual.jpg](https://i.postimg.cc/prXGsGyg/modelo-conceotual.jpg)](https://postimg.cc/VrpW6FqR)
