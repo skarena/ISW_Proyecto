@@ -90,7 +90,7 @@ CUN03|Visualizar productos|El cliente interactua con el sistema, observandose di
 3.1.7. Matriz de trazabilidad de los requerimientos y casos de uso
 
 
-*Matriz de trazabilidad de los requerimientos de sistema*
+***Matriz de trazabilidad de los requerimientos de sistema***
 
 |Requerimientos|Prioridad|Estado|Dificultad|Asignado a|
 |:----|:----|:----|:----|:----|
@@ -113,7 +113,7 @@ CUN03|Visualizar productos|El cliente interactua con el sistema, observandose di
 
 
 
-*Matiz de trazabilidad de casos de uso y actores*
+***Matiz de trazabilidad de casos de uso y actores***
 
 |Relaciones |CUS1: Registrar logueo|CUS2: Registrar cliente|CUS3: Realizar catálogo|CUS4: Registrar empleado|CUS5: Registrar diagnóstico|CUS6: Registrar citas|CUS7: Generar ficha de atención|CUS8: Registrar productos|CUS9: Registrar ventas|CUS10: Consultar catálogo|CUS11: Realizar pedido|CUS12: Generar reportes|CUS13: Generar comprobantes de pago|CUS14: imprimir documentos|CUS15: Generar ficha de atención|CUS16: Realizar inventario|
 |:----|:----|:----|:----|:----|:----|:----|:----|:----|:----|:----|:----|:----|:----|:----|:----|:----|
