@@ -85,7 +85,31 @@ CUN02|Reservar Cita|En este caso de uso de negocio el cliente solicita al sistem
 CUN03|Visualizar productos|El cliente interactua con el sistema, observandose diversos productos de interes, del cual el mismo podra obtener información de las diferentes caracteristicas de los productos mostrados.
 
 
+
+
 3.1.7. Matriz de trazabilidad de los requerimientos y casos de uso
+
+
+Matriz de trazabilidad de los requerimientos de sistema
+
+|Requerimientos|Prioridad|Estado|Dificultad|Asignado a|
+|:----|:----|:----|:----|:----|
+|CUS1: Registrar logueo|Alta|Propuesto|Media|Administrador|
+|CUS2: Registrar cliente|Alta|Propuesto|Media|Administrador|
+|CUS3: Realizar catálogo|Media|Propuesto|Alta|Adminstrador|
+|CUS4: Registrar empleado|Media|Propuesto|Media|Administrador|
+|CUS5: Registrar diagnóstico|Media|Propuesto|Media|Optómetra|
+|CUS6: Registrar citas|Media|Propuesto|Media|Recepcionista|
+|CUS7: Generar ficha de atención|Media|Propuesto|Media|Recepcionista|
+|CUS8: Registrar productos|Alta|Propuesto|Media|Administrador|
+|CUS9: Registrar ventas|Alta|Propuesto|Media|Administrador|
+|CUS10: Consultar catálogo|Media|Propuesto|Media|Cliente|
+|CUS11: Realizar pedido|Media|Propuesto|Media|Cliente|
+|CUS12: Generar reportes|Baja|Propuesto|Alta|Administrador|
+|CUS13: Generar comprobantes de pago|Media|Propuesto|Media|Recepcionista|
+|CUS14: imprimir documentos|Baja|Propuesto|Media|Recepcionista|
+|CUS15: Generar ficha de atención|Media|Propuesto|Media|Recepcionista|
+|CUS16: Realizar inventario|Alta|Propuesto|Alta|Administrador|
 
 
 3.1.8. Modelo Conceptual de clases
