@@ -100,6 +100,10 @@
     6. Ámbito del Proyecto
         **a. Área**
 
+        La empresa Asesoría óptica D & R, realiza campañas en muchos lugares estratégicos tales como en el distrito de San Martín de Porres (Av. Perú, óvalo José Granda, Av. Universitaria cruce con la Av. Perú), Lima y en el Callao que es por Mi Perú, Ventanilla, Ciudad del Pescador, Bellavista y bocanegra. Cuando la empresa realiza campañas brinda los servicios, tales como medición de vista, descarte de alteraciones oculares en primer grado, y dependiendo del paciente, se le ofrece la asesoría de monturas para que así el paciente adquiera dicho producto. La Asesoría Óptica D & R, como estrategia se presenta en los mercados, vasos de leche, parques en la que solicita autorización a la Municipalidad o presidentes del sector.
+
+        Dicho a lo anterior, como se podrá apreciar, el negocio no tiene un lugar establecido por más de 72 horas. Sin embargo, su domicilio fiscal está en la Mz. O4, Lt. 11, Ciudad del Pescador, Bellavista, Callao. El centro de operaciones para la realización de los trabajos cuando realiza campañas, es en el centro de lima. Finalmente, como coordinación de equipo para la realización del proyecto, se realizará de forma remota.
+
         **b. Recursos Humanos**
 
         “La gestión de los recursos humanos del proyecto incluye los procesos que organizan, gestionan y conducen al equipo del proyecto, que está compuesto por las personas a las que se han asignado roles y responsabilidades para completar el proyecto”. (Granadino, 2016, párr. 3).
@@ -116,18 +120,72 @@
         **c. Software**
 
         * Microsoft Office Word 2016
+
+            Microsoft Word es un programa completo de procesamiento de texto para los sistemas operativos Windows y Mac.
         * Microsoft Office Excel 2016
-        * Netbeans
+
+            Microsoft Excel es un programa de hojas de cálculo que permite realizar cálculos, contiene herramientas de gráficos, tablas dinámicas y soporte para lenguajes de programación de macros, compatibles con los sistemas operativos de Windows y Mac.
         * Microsoft Office PowerPoint 2016
+
+            Microsoft PowerPoint es un programa de presentación para los sistemas operativos Windows y Mac.
         * Enterprise Architect
+
+            El software Enterprise architect es una plataforma de modelado, diseño y administración colaborativa, basada en UML (Lenguaje Unificado de modelado). Esta plataforma es ágil, intuitiva y extensible, en la que contiene enormes características para dominios específicos.
         * GitHub
+
+            Repositorio online gratuito que permite gestionar proyectos y controlar versiones de código. Es muy utilizado por desarrolladores para almacenar sus trabajos dando así la oportunidad a millones de personas de todo el mundo a cooperar en ellos.
         * Trello
+
+            Trello es una herramienta visual que permite a los equipos gestionar cualquier tipo de proyecto y flujo de trabajo, así como supervisar tareas. Añade archivos, checklists o incluso automatizaciones: personalízalo todo según las necesidades de tu equipo.
         * Microsoft SQL Server Management Studio 18
-        * MySQL
+
+            SQL Server Management Studio (SSMS para abreviar) es un entorno de desarrollo integrado para administrar cualquier infraestructura SQL. Se utiliza para acceder, administrar, configurar y desarrollar todos los componentes de SQL Server y SQL Database. Microsoft lo ha optimizado a lo largo de los años y es un programa de administración de servidores y bases de datos muy popular.
 
         d. Hardware
 
+        En este apartado, como equipo hemos determinado lo siguiente:
+
+        Los requerimientos de hardware de la aplicación, tales como:
+
+        * Laptop y computadora
+
+            Desarrollo de la página web
+
+        * Mouse
+
+            Manipulación de los objetos en la pantalla de la laptop y/o computadora
+
+        * Monitor
+
+            Va a mostrar los datos, objetos e información para el desarrollo de la página web.
+
+        * Cámara
+
+            Registrar y capturar las imágenes cuando se realicen las reuniones ya sea con el equipo y aliado del negocio.
+
+        Por la capacidad de respuesta:
+
+        * Celular
+
+            Coordinación con el equipo y pactar las reuniones con el aliado.
+
         e. Cronograma de Actividades
+
+        |Actividades a Desarrollar |S1|S2|S3|S4|S5|S6|S7|S8|S9|S10|S11|S12|S13|
+        |:----|:----|:----|:----|:----|:----|:----|:----|:----|:----|:----|:----|:----|:----|
+        |Presentación de la propuesta Inicial del proyecto al representante del negocio||✔||| | | ||| | || |
+        |Reunión con el representante legal del negocio.| |✔ | | || | | | | | | | |
+        |Recolección de procesos del negocio| | ✔| | | ||| | | | | ||
+        |Identificación de los requerimientos del negocio para implementarlos en el proyecto| |✔ | | | | | | | ||| | |
+        |Informe – Aspectos de la organización hasta modelo de requerimientos| | |✔ | ✔| | | | | ||| | |
+        |Primera muestra del desarrollo del proyecto al asesor.| | | | ✔| | | | | ||| | |
+        |Primera prueba de calidad para validar el desarrollo del software| | | | |✔ | | | | ||| | |
+        |Reunión con el aliado para el muestreo del Loguin de la página web.| | | | | | ✔| | | ||| | |
+        |Segunda prueba del desarrollo del software con todos los miembros del equipo| | | | | | | ✔| | ||| | |
+        |Segunda muestra del desarrollo del proyecto parte 2 al asesor.| | | | | | | |✔ | ||| | |
+        |Reunión con el aliado para mostrarle las vistas de la página web.| | | | | | | | |✔ ||| | |
+        |Última prueba del desarrollo del software con todos los miembros del equipo y validación de la calidad del cumplimiento de objetivos y entregable| | | | | | | | |✔ |✔|✔|✔ | |
+        |Entrega FINAL del proyecto al representante del negocio| | | | | | | | | ||| | ✔|
 
  2. Aspectos del Negocio
 
