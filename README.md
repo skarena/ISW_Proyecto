@@ -112,10 +112,9 @@
         ---|---|---
         Gestora de proyecto|Salcedo Aranguren, Karen Lizet|Presentar proyecto al aliado.
         Administrador de Base de Datos| Zerpa Zegarra Paul Daniel| Crear la base de datos
-        Programador| Flores Vives Victor Alberto|
-        Analista de Sistemas|Brito Ruiz Kimberling Betsayda|
-        Calidad de Software| Peña Garcia Keyla Elisa|
-        Tester| Damian Solis Randy Moises|
+        Programador| Flores Vives Victor Alberto|Lectura y análisis de informes de investigación y sugerencias de los usuarios.
+        Analista de Sistemas|Brito Ruiz Kimberling Betsayda y Peña García, Keyla Elisa|Realizar formación y asesoramiento del personal de la empresa.
+        Especialista de soporte| Damian Solis Randy Moises y Brito Ruiz, Kimberling Betsayda|Brindar asistencia a los empleados o clientes en materia tecnológica: *Comprender el problema y su causa. *Solucionar el problema. *Explicar el problema a los miembros del equipo.
 
         **c. Software**
 
