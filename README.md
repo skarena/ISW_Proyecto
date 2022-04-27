@@ -78,7 +78,7 @@
 
         3. Determinar los requerimientos del cliente para los servicios de la página web en la Asesoría Óptica D & R.
 
-        4. Información básica que debe estar en la página web de la Asesoría Óptica D & R.
+        4. Brindar información básica que debe estar en la página web de la Asesoría Óptica D & R.
 
     4. Antecedentes
 
