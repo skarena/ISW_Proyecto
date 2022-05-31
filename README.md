@@ -291,3 +291,353 @@
 3.1.8. Modelo Conceptual de clases
 
 [![modelo-conceotual.jpg](https://i.postimg.cc/prXGsGyg/modelo-conceotual.jpg)](https://postimg.cc/VrpW6FqR)
+
+3.2. **Analisis Orientado a Objetos**
+
+3.2.1.2. Diagramas de Secuencia y Colaboración de Análisis
+
+* Realizar Registro
+ ![Diagrama de Secuencia - Realizar Registro](DS_Realizar_Registro.png)
+
+* Reservar Cita
+ ![Diagrama de Secuencia - Reservar Cita](DS_ReservarCita.png)
+
+3.2.2. Lista de Clases de Interfaz
+
+* Interface Login
+* Interface Principal
+* Interface Usuarios
+* Interface Reservas
+* Interface Compras
+* Interface Clientes
+* Interface Productos
+* Interface Proveedor
+* Interface Detalle Productos
+* Interface Detalle Ventas
+* Interface Detalle Compras
+
+3.2.3. Lista de Clases de Control
+
+* Controlador Login
+* Usuario Controlador
+* Reserva Controlador
+* Compras Controlador
+* Cliente Controlador
+* Producto Controlador
+
+3.2.4. Lista de Clases de Entidades
+
+* Producto
+* Proveedor
+* Cliente
+* Venta
+* Compra
+* Cita
+* Rol
+* Empleado
+* Marca
+* Categoria
+
+3.2.5. Modelo Lógico de Clases
+
+ ![Modelo Lógico](ModeloLogico.drawio.png)
+
+3.3. Diseño Orientado a Objetos
+
+3.3.1. Modelo Fisico
+
+3.3.1.1. Creación del Esquema y Tablas
+
+```sql
+go
+use master
+go
+IF NOT EXISTS(SELECT name FROM master.dbo.sysdatabases WHERE NAME = 'BDD_OPTICA')
+CREATE DATABASE BDD_OPTICA
+GO 
+
+USE BDD_OPTICA
+GO
+
+--(1) TABLA ROL
+if not exists (SELECT * FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_SCHEMA = 'dbo' AND TABLE_NAME = 'ROL')
+create table ROL(
+IdRol int primary key identity(1,1),
+Descripcion varchar(60),
+Activo bit default 1,
+FechaRegistro datetime default getdate()
+)
+GO
+
+--(2) TABLA OPTICA
+if not exists (SELECT * FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_SCHEMA = 'dbo' AND TABLE_NAME = 'OPTICA')
+create table OPTICA(
+IdTienda int primary key identity(1,1),
+Nombre varchar(60),
+RUC varchar(60),
+Direccion varchar(100),
+Telefono varchar(50),
+Activo bit default 1,
+FechaRegistro datetime default getdate()
+)
+GO
+
+--(3) TABLA MENU
+if not exists (SELECT * FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_SCHEMA = 'dbo' AND TABLE_NAME = 'MENU')
+create table MENU(
+IdMenu int primary key identity(1,1),
+Nombre varchar(60),
+Icono varchar(60),
+Activo bit default 1,
+FechaRegistro datetime default getdate()
+)
+GO
+
+--(4) TABLA SUBMENU
+if not exists (SELECT * FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_SCHEMA = 'dbo' AND TABLE_NAME = 'SUBMENU')
+create table SUBMENU(
+IdSubMenu int primary key identity(1,1),
+IdMenu int references MENU(IdMenu),
+Nombre varchar(60),
+Controlador varchar(60),
+Vista varchar(50),
+Icono varchar(50),
+Activo bit default 1,
+FechaRegistro datetime default getdate()
+)
+GO
+
+--(5) TABLA USUARIO
+if not exists (SELECT * FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_SCHEMA = 'dbo' AND TABLE_NAME = 'USUARIO')
+create table USUARIO(
+IdUsuario int primary key identity(1,1),
+Nombres varchar(60),
+Apellidos varchar(60),
+Correo varchar(60),
+Clave varchar(100),
+IdTienda int references OPTICA(IdTienda),
+IdRol int references ROL(IdRol),
+Activo bit default 1,
+FechaRegistro datetime default getdate()
+)
+GO
+
+--(6) TABLA PERMISOS
+if not exists (SELECT * FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_SCHEMA = 'dbo' AND TABLE_NAME = 'PERMISOS')
+create table PERMISOS(
+IdPermisos int primary key identity(1,1),
+IdRol int references ROL(IdRol),
+IdSubMenu int references SUBMENU(IdSubMenu),
+Activo bit default 1,
+FechaRegistro datetime default getdate()
+)
+go
+--(7) TABLA PROVEEDOR
+if not exists (SELECT * FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_SCHEMA = 'dbo' AND TABLE_NAME = 'PROVEEDOR')
+create table PROVEEDOR(
+IdProveedor int primary key identity(1,1),
+RUC varchar(50),
+RazonSocial varchar(100),
+Telefono varchar(50),
+Correo varchar(50),
+Direccion varchar(50),
+Activo bit default 1,
+FechaRegistro datetime default getdate()
+)
+go
+
+--(8) TABLA CATEGORIA
+if not exists (SELECT * FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_SCHEMA = 'dbo' AND TABLE_NAME = 'CATEGORIA')
+create table CATEGORIA(
+IdCategoria int primary key identity(1,1),
+Descripcion varchar(100),
+Activo bit default 1,
+FechaRegistro datetime default getdate()
+)
+go
+
+
+--(8) TABLA PRODUCTO
+if not exists (SELECT * FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_SCHEMA = 'dbo' AND TABLE_NAME = 'PRODUCTO')
+create table PRODUCTO(
+IdProducto int primary key identity(1,1),
+Codigo varchar(100),
+ValorCodigo int,
+Nombre varchar(100),
+Descripcion varchar(100),
+IdCategoria int references CATEGORIA(IdCategoria),
+Activo bit default 1,
+FechaRegistro datetime default getdate()
+)
+go
+
+
+--(8) TABLA PRODUCTO_OPTICA
+if not exists (SELECT * FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_SCHEMA = 'dbo' AND TABLE_NAME = 'PRODUCTO_OPTICA')
+create table PRODUCTO_OPTICA(
+IdProductoTienda int primary key identity(1,1),
+IdProducto int references PRODUCTO(IdProducto),
+IdTienda int references OPTICA(IdTienda),
+PrecioUnidadCompra decimal(18,2) default 0,
+PrecioUnidadVenta decimal(18,2) default 0,
+Stock bigint default 0,
+Activo bit default 1,
+Iniciado bit default 0,
+FechaRegistro datetime default getdate()
+)
+go
+
+--(9) TABLA COMPRA
+if not exists (SELECT * FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_SCHEMA = 'dbo' AND TABLE_NAME = 'COMPRA')
+create table COMPRA(
+IdCompra int primary key identity(1,1),
+IdUsuario int references USUARIO(IdUsuario),
+IdProveedor int references PROVEEDOR(IdProveedor),
+IdTienda int references OPTICA(IdTienda),
+TotalCosto decimal(18,2) default 0,
+TipoComprobante varchar(50) default 'Boleta',
+Activo bit default 1,
+FechaRegistro datetime default getdate()
+)
+go
+
+--(10) TABLA DETALLE_COMPRA
+if not exists (SELECT * FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_SCHEMA = 'dbo' AND TABLE_NAME = 'DETALLE_COMPRA')
+create table DETALLE_COMPRA(
+IdDetalleCompra int primary key identity(1,1),
+IdCompra int references COMPRA(IdCompra),
+IdProducto int references Producto(IdProducto),
+Cantidad int,
+PrecioUnitarioCompra decimal(18,2),
+PrecioUnitarioVenta decimal(18,2),
+TotalCosto decimal(18,2),
+Activo bit default 1,
+FechaRegistro datetime default getdate()
+)
+go
+
+-- (10) TABLA CLIENTE
+if not exists (SELECT * FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_SCHEMA = 'dbo' AND TABLE_NAME = 'CLIENTE')
+create table CLIENTE(
+IdCliente int primary key identity(1,1),
+TipoDocumento varchar(50),
+NumeroDocumento varchar(50),
+Nombre varchar(50),
+Direccion varchar(50),
+Telefono varchar(40),
+Activo bit default 1,
+FechaRegistro datetime default getdate()
+)
+go 
+
+-- (11) TABLA VENTA
+if not exists (SELECT * FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_SCHEMA = 'dbo' AND TABLE_NAME = 'VENTA')
+create table VENTA(
+IdVenta int primary key identity(1,1),
+Codigo varchar(100),
+ValorCodigo int,
+IdTienda int references OPTICA(IdTienda),
+IdUsuario int references USUARIO(IdUsuario),
+IdCliente int references CLIENTE(IdCliente),
+TipoDocumento varchar(50),
+CantidadProducto int,
+CantidadTotal int,
+TotalCosto  decimal(18,2),
+ImporteRecibido decimal(18,2),
+ImporteCambio decimal(18,2),
+Activo bit default 1,
+FechaRegistro datetime default getdate()
+)
+go
+
+-- (12) TABLA DETALLE_VENTA
+if not exists (SELECT * FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_SCHEMA = 'dbo' AND TABLE_NAME = 'DETALLE_VENTA')
+create table DETALLE_VENTA(
+IdDetalleVenta int primary key identity(1,1),
+IdVenta int references VENTA(IdVenta),
+IdProducto int references PRODUCTO(IdProducto),
+Cantidad int,
+PrecioUnidad decimal(18,2),
+ImporteTotal decimal(18,2),
+Activo bit default 1,
+FechaRegistro datetime default getdate()
+)
+go
+```
+
+3.3.2 Estructura Modular del SWOO
+3.3.2.1. Diseño de Ventanas
+
+
+3.3.2.2. Diseño de Reportes
+
+
+3.3.3 Diagrama de la Capa de Presentación
+![D_Presentación](Capa_Presentacion.png)
+
+3.3.4. Diagrama de la Capa de Negocio
+![D_Dominio](Capa_Dominio.png)
+
+
+3.3.5. Diagrama de la Capa de Datos
+![D_Datos](Capa_Datos.png)
+
+3.3.6. Diagramas de Componentes
+
+3.3.7. Diagramas de Distribución
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
