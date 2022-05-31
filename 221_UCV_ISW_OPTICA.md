@@ -292,14 +292,16 @@
 
 [![modelo-conceotual.jpg](https://i.postimg.cc/prXGsGyg/modelo-conceotual.jpg)](https://postimg.cc/VrpW6FqR)
 
-3.2. **Analisis Orientado a Objetos**
+3.2. Analisis Orientado a Objetos
 
 3.2.1.2. Diagramas de Secuencia y Colaboración de Análisis
 
 * Realizar Registro
+
  ![Diagrama de Secuencia - Realizar Registro](DS_Realizar_Registro.png)
 
 * Reservar Cita
+
  ![Diagrama de Secuencia - Reservar Cita](DS_ReservarCita.png)
 
 3.2.2. Lista de Clases de Interfaz
@@ -340,7 +342,7 @@
 
 3.2.5. Modelo Lógico de Clases
 
- ![Modelo Lógico](ModeloLogico.drawio.png)
+![Modelo Lógico](ModeloLogico.drawio.png)
 
 3.3. Diseño Orientado a Objetos
 
@@ -566,17 +568,21 @@ go
 ```
 
 3.3.2 Estructura Modular del SWOO
+
 3.3.2.1. Diseño de Ventanas
 
 3.3.2.2. Diseño de Reportes
 
 3.3.3 Diagrama de la Capa de Presentación
+
 ![D_Presentación](Capa_Presentacion.png)
 
 3.3.4. Diagrama de la Capa de Negocio
+
 ![D_Dominio](Capa_Dominio.png)
 
 3.3.5. Diagrama de la Capa de Datos
+
 ![D_Datos](Capa_Datos.png)
 
 3.3.6. Diagramas de Componentes
