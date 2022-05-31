@@ -568,9 +568,7 @@ go
 3.3.2 Estructura Modular del SWOO
 3.3.2.1. Diseño de Ventanas
 
-
 3.3.2.2. Diseño de Reportes
-
 
 3.3.3 Diagrama de la Capa de Presentación
 ![D_Presentación](Capa_Presentacion.png)
@@ -578,66 +576,9 @@ go
 3.3.4. Diagrama de la Capa de Negocio
 ![D_Dominio](Capa_Dominio.png)
 
-
 3.3.5. Diagrama de la Capa de Datos
 ![D_Datos](Capa_Datos.png)
 
 3.3.6. Diagramas de Componentes
 
 3.3.7. Diagramas de Distribución
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
