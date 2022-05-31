@@ -571,7 +571,43 @@ go
 
 3.3.2.1. Diseño de Ventanas
 
+* Ventana Principal
+
+![V_Principal](Ventana_Principal.png)
+
+* Ventana Categorias
+
+![V_Categorias](Ventana_Categorias.png)
+
+* Ventana Clientes
+
+![V_Clientes](Ventana_Clientes.png)
+
+* Ventana Registrar Compra
+
+![V_RegComp](Ventana_RegistrarCompra.png)
+
+* Ventana Rol
+
+![V_Rol](Ventana_Rol.png)
+
+* Ventana Login
+
+![V_Login](Ventana_Login.png)
+
+* Ventana Permisos
+
+![V_Permisos](Ventana_Permisos.png)
+
 3.3.2.2. Diseño de Reportes
+
+* Reportes Productos Tienda
+
+![R_ProductosTienda](Reporte_Productos_Tienda.png)
+
+* Reportes Productos
+
+![R_Productos](Reporte_Productos.png)
 
 3.3.3 Diagrama de la Capa de Presentación
 
@@ -585,6 +621,15 @@ go
 
 ![D_Datos](Capa_Datos.png)
 
-3.3.6. Diagramas de Componentes
+CONCLUSIONES Y RECOMENDACIONES
 
-3.3.7. Diagramas de Distribución
+Es importante que “EMPRESA ASESORÍA ÓPTICA D & R”, haya visualizado y analizado las tendencias del mercado, que es cambiante, para así poder tomar decisiones estratégicas de mercadeo digital que ayuden en su gestión de buscar nuevos segmentos al cual dirigirse, la impulsen a destacarse y sobresalir en el mercado, con la realización del análisis del mercado óptico en internet, la Empresa pudo identificar las diferentes estrategias implementadas por la competencia, y basándose en ello, poder implementar sus propias estrategias para no solo aparecer en internet, si no también aumentar su posicionamiento ya que con la información recopilada en esta investigación, se logró dimensionar el valor de las herramientas y aplicaciones que ofrece Internet como redes sociales integradas a un sitio web, dinamizando los servicios del sector óptico, por medio de estrategias de contenido bien estructuradas despertando el interés de los usuarios, para ello se debe analizar los beneficios que ofrece, y poderlos integrar según las necesidades y requerimientos que tiene la empresa a la hora de optar por un software que lo permita.
+Empresa Asesoria Óptica D & R, es una empresa en crecimiento y por eso es importante la implementación de una página web, que ayude en su labor diaria, mejorando las relaciones con los clientes, potencializando su mercado y tipificando los clientes según sus necesidades y requerimientos.  Los indicadores de gestión aportan valor a la gestión de implantar una plataforma digital en Empresa Asesoria Óptica D & R, ya que por medio de estos se mide el rendimiento y se obtienen los resultados según los objetivos planteados por la Empresa.
+
+* Evidentemente el Internet ha facilitado el acceso a la información de forma eficaz, es por ello que Empresa Asesoria Óptica D & R, debe seguir haciendo uso efectivo de las tecnologías de la comunicación, brindando a los clientes mayor calidad en el servicio que ofrece la Empresa, ya que con el buen uso de esta herramienta se puede obtener un mayor posicionamiento a raíz de una excelente administración que se debe tener.
+
+* Se recomienda diseñar una estrategia de publicidad y promoción tanto para la página web y redes sociales, como para la plataforma digital, incentivando la participación y el interés de los usuarios en los diferentes espacios de interacción que Empresa Asesoria Óptica D & R brinda.
+
+* Realizar las respectivas mediciones de cada aplicación periódicamente, para tener información relevante en cifras, datos, gráficas, etc., que soporte la evolución de dichas aplicaciones, por medio del análisis e interpretación oportuna de los resultados, para la toma de decisiones.
+
+* Establecer un área de mercadeo que brinde soporte y apoyo a todas las labores desarrolladas en la Empresa.
